@@ -25,7 +25,7 @@ if __name__ == '__main_':
 def lalala(message):
     if message.chat.type == 'supergroup':
         word = ["Привет, бот", "Привіт, бот", "Hello, bot"]
-        bot.send_message(message.chat.id, random.sample(word, 1))
+        bot.reply_to(message, random.sample(word, 1))
 
 
 
